@@ -20,8 +20,10 @@ Best hikes for X type of person at X time and place;
 Average speed relative to altitude;
 Effect of different variables on speed. Variables include: Weather, Elevation, Elevation gain.
 
-Used VIM to remove headers (all but column labels) from .gpx files using this format in Terminal:
+EDIT 09-27-2023
+1. Converted .gpx files to .csv.
 
-$ vim filename.gpx
+2. Used VIM to remove headers (all but column labels) from .csv files using this format in Terminal:
+$ vim filename.csv
 :1,/\ntrkpt/+1d
 :wq
